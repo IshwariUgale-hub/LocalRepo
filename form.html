@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Details</title>
+  <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Tell Us Your Preferences</h2>
+
+    <form action="/generate" method="POST">
+      <label>Area of Interest / Domain</label>
+      <input type="text" name="domain" required placeholder="e.g., AI, Web Dev, IoT">
+
+      <label>Skill Level</label>
+      <select name="skill" required>
+        <option value="">Select</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+
+      <label>Description (1-2 lines)</label>
+      <textarea name="desc"  placeholder="Describe what kind of ideas you want"></textarea>
+
+      <label>Number of Ideas</label>
+      <select name="count">
+        <option>3</option>
+        <option selected>5</option>
+        <option>6</option>
+      </select>
+
+      <button type="submit" class="btn">Generate Ideas</button>
+    </form>
+  </div>
+</body>
+</html>
+
